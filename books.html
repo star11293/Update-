@@ -1,5 +1,6 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Page Not Found • Empowering Your Mindset</title>
+<!doctype html><html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Books • Empowering Your Mindset</title>
 <style>:root{--bg:#ffffff;--text:#0b1220;--muted:#5b657a;--brand:#0b3b8c;--brand-2:#4f46e5;--border:#e6e9f2;--shadow:0 10px 25px rgba(12,36,99,.08);--accent-start:#0b3b8c;--accent-end:#4f46e5}
 .page-about{--accent-start:#0f9fb3;--accent-end:#1e5bd7}.page-services{--accent-start:#d19c00;--accent-end:#f59e0b}.page-books{--accent-start:#6d28d9;--accent-end:#1d4ed8}.page-events{--accent-start:#22a2ff;--accent-end:#06b6d4}.page-contact{--accent-start:#10b981;--accent-end:#2563eb}
 *{box-sizing:border-box}html,body{margin:0;padding:0}body{font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;color:var(--text);background:var(--bg);line-height:1.6}
@@ -29,7 +30,8 @@ a{color:var(--brand);text-decoration:none}a:hover{text-decoration:underline}.con
 .site-footer{border-top:1px solid var(--border);padding:24px 0 0;margin-top:40px;background:#fff}.footer-grid{display:grid;grid-template-columns:2fr 1fr 1.2fr;gap:20px;padding:20px 0}.brand-footer{display:flex;gap:8px;align-items:center}.fineprint{padding:12px 0;border-top:1px solid var(--border);text-align:center;color:var(--muted)}.subscribe{display:grid;grid-template-columns:1fr auto;gap:8px}.subscribe input{border:1px solid var(--border);border-radius:10px;padding:10px 12px}
 @media (max-width:900px){.hero-grid{grid-template-columns:1fr}.stats{grid-template-columns:repeat(3,minmax(0,1fr))}.cards-3{grid-template-columns:1fr}.media-card{grid-template-columns:1fr}.grid-2{grid-template-columns:1fr}}
 </style></head>
-<body class="page-home"><header class="site-header" role="banner">
+<body class="page-books">
+<header class="site-header" role="banner">
   <div class="container header-inner">
     <a class="brand" href="index.html" aria-label="Empowering Your Mindset home"><span class="brand-text">Empowering Your Mindset</span></a>
     <nav class="site-nav" role="navigation" aria-label="Primary">
@@ -38,7 +40,7 @@ a{color:var(--brand);text-decoration:none}a:hover{text-decoration:underline}.con
         <li><a href="index.html" >Home</a></li>
         <li><a href="about.html" >About</a></li>
         <li><a href="services.html" >Services</a></li>
-        <li><a href="books.html" >Books</a></li>
+        <li><a href="books.html" style="font-weight:700;">Books</a></li>
         <li><a href="events.html" >Events</a></li>
         <li><a href="contact.html" >Contact</a></li>
         <li><a class="btn btn-primary" href="contact.html#booking">Book Speaking</a></li>
@@ -46,7 +48,15 @@ a{color:var(--brand);text-decoration:none}a:hover{text-decoration:underline}.con
     </nav>
   </div>
 </header>
-<main class="container" style="padding:60px 0"><h1>404 — Page Not Found</h1><p>The page you’re looking for doesn’t exist. Let’s get you back on track.</p><p><a class="btn btn-primary" href="index.html">Go to Homepage</a></p></main>
+<main id="main">
+<section class="page-hero reveal"><div class="container narrow"><h1>Books</h1><p class="lead">Practical frameworks you can use this week.</p></div></section>
+<section class="section reveal"><div class="container cards-3">
+<article class="card media-card" id="lever1"><div class="book-cover"></div><div class="media-card-body"><h3>Mindset Lever 1</h3><p>Subtitle copy that sets the promise.</p><div class="row"><a class="btn btn-primary" href="#">Buy</a><button class="btn btn-outline" onclick="document.querySelector('[data-modal]').removeAttribute('hidden')">Preview</button></div></div></article>
+<article class="card media-card" id="lever2"><div class="book-cover"></div><div class="media-card-body"><h3>Mindset Lever 2</h3><p>Subtitle copy that sets the promise.</p><div class="row"><a class="btn btn-primary" href="#">Buy</a><button class="btn btn-outline" onclick="document.querySelector('[data-modal]').removeAttribute('hidden')">Preview</button></div></div></article>
+<article class="card media-card" id="lever3"><div class="book-cover"></div><div class="media-card-body"><h3>Mindset Lever 3</h3><p>Subtitle copy that sets the promise.</p><div class="row"><a class="btn btn-primary" href="#">Buy</a><button class="btn btn-outline" onclick="document.querySelector('[data-modal]').removeAttribute('hidden')">Preview</button></div></div></article>
+</div></section>
+<div class="lead-magnet" data-modal hidden><div class="lead-dialog" role="dialog" aria-modal="true" aria-labelledby="preview-title"><div class="lead-head"><h3 id="preview-title">Book Preview</h3><button class="close" onclick="document.querySelector('[data-modal]').setAttribute('hidden','')" aria-label="Close">✕</button></div><div class="modal-body"><p>This is a short preview excerpt. Replace with real sample pages or a PDF embed.</p></div></div></div>
+</main>
 <footer class="site-footer" role="contentinfo">
   <div class="container footer-grid">
     <div><div class="brand-footer"><strong>Empowering Your Mindset</strong></div><p>Tools, talks, and coaching to lead with clarity and trust.</p></div>
